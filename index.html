@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Info Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Country Info Explorer</h1>
+    <form id="search-form" class="search-form">
+      <div class="autocomplete">
+        <input type="text" id="country-input" placeholder="Enter a country name" class="input-field">
+        <ul id="suggestions" class="suggestions"></ul>
+      </div>
+      <select id="region-filter" class="select-field">
+        <option value="all">All Regions</option>
+        <option value="Africa">Africa</option>
+        <option value="Americas">Americas</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="Oceania">Oceania</option>
+      </select>
+      <button type="submit" class="button">Search</button>
+    </form>
+    <button id="random-btn" class="button-random">Random Country</button>
+    <div id="result" class="result-card"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
